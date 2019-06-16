@@ -262,11 +262,9 @@ def game():
         if turn == 1:
             game_on = turn_logic(turn, player1, player2)
             turn *= -1
-        elif turn == -1:
+        else:
             game_on = turn_logic(turn, player2, player1)
             turn *= -1
-        else:
-            print("not working")
 
     print("thank you for playing battleships")
     print("Final board's:")
